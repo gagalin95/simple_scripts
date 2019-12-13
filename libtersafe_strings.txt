@@ -1,1158 +1,1250 @@
-64272 ->  get_cpu_type
-64296 ->  hex2i
-64316 ->  str_num
-64334 ->  ToString
-64352 ->  PointerAdd
-64372 ->  PointerSub
-64390 ->  Hex2Pointer
-64408 ->  StrPointer
-64426 ->  get_module_base
-64444 ->  log
-64476 ->  ReportQosByGame
-64492 ->  ReportData3
-64510 ->  get_sdk_version
-64528 ->  get_app_version
-64546 ->  sleep
-64564 ->  get_app_short_ver
-64586 ->  open_tphm
-64608 ->  enum_tphm
-64630 ->  get_tphm_name
-64652 ->  get_tphm_start
-64674 ->  get_tphm_size
-64696 ->  close_tphm
-64722 ->  getpid
-64744 ->  getuid2
-64764 ->  CacheFlush
-64786 ->  GetSoTxtSegInfo3
-64808 ->  OpenTPAH
-64830 ->  CloseTPAH
-64852 ->  EnumTPApk
-64874 ->  GetTPApkInfo
-64896 ->  mprotect
-64920 ->  open_tpmh
-64950 ->  close_tpmh
-64980 ->  enum_tpmh
-65010 ->  tpmh_get_apk_name
-65040 ->  tpmh_get_malware_name
-65070 ->  UpdateTersafe
-65102 ->  OpenTPHP
-65132 ->  CloseTPHP
-65162 ->  EnumTPProcess
-65194 ->  TPHPGetName
-65222 ->  ClockGetTime
-65254 ->  dlopen
-65494 ->  dlsym
-65524 ->  dlsym2
-65554 ->  dlclose
-65584 ->  get_tphm_exec
-65614 ->  get_tphm_read
-65646 ->  MonoOpen
-65676 ->  MonoClose
-65706 ->  MonoEnum
-65736 ->  GetMonoImageInfo
-65768 ->  is_mem_readable
-65802 ->  cal_buf_crc
-65834 ->  cal_str_crc
-65864 ->  get_file_sizes
-65894 ->  get_file_md5
-65924 ->  get_file_crc
-65954 ->  is_wifi
-65984 ->  is_root
-66014 ->  gray
-66044 ->  get_cache_file_path
-66074 ->  get_cache_file_path2
-66104 ->  process_name
-66132 ->  get_openid
-66160 ->  get_gameid
-66188 ->  get_platform
-66218 ->  create_data_stream
-66246 ->  close_data_stream
-66274 ->  write_u8
-66302 ->  write_u16
-66330 ->  write_u32
-66358 ->  write_str
-66386 ->  write_enc_str
-66420 ->  DsAllocMem
-66448 ->  DsSetOff
-66474 ->  DsGetOff
-66502 ->  DsReadLine
-66678 ->  get_ds_buf
-66706 ->  get_ds_buf_len
-66734 ->  ds_read_file
-66768 ->  DsMmapFile
-66796 ->  ds_get_buf_cap
-66824 ->  read_u8
-66852 ->  read_u16
-66880 ->  read_u32
-66908 ->  read_str_ex
-66934 ->  ReadNStr
-66960 ->  read_enc_str_ex
-66986 ->  read_mem
-67012 ->  memcmp
-67042 ->  memcpy
-67066 ->  GetTimeOfDay
-67094 ->  dump_buf
-67120 ->  tcj_file
-67146 ->  mk_dir
-67172 ->  rm_dir
-67198 ->  open_dir
-67224 ->  close_dir
-67250 ->  enum_dir
-67276 ->  is_hooked_by_mrpcs
-67302 ->  get_file_time
-67328 ->  get_random
-67354 ->  set_key_and_value
-67380 ->  get_value_by_key
-67406 ->  get_comm_value_by_key
-67432 ->  folder_not_writable
-67458 ->  kill
-67484 ->  TPHPGetPid
-67510 ->  OpenTPZip
-67536 ->  CloseTPZip
-67564 ->  CreateTPZip
-67590 ->  TPZipAdd
-67616 ->  TPEnumZipInfo
-67642 ->  GetTPZipItemInfo
-67668 ->  TPUnzip
-67694 ->  TPUnzip2File
-67878 ->  GetUnzipInfo
-67904 ->  IsStrExists
-67930 ->  QueryStr
-67956 ->  QueryInteger
-67982 ->  access
-68008 ->  CharAt
-68036 ->  IsEnabled
-68062 ->  SetEnabled
-68088 ->  SendCmd
-68114 ->  MemValue
-68140 ->  SetMemValue
-68166 ->  SockConnect
-68190 ->  UnixSockConnect
-68214 ->  SockSend
-68238 ->  SockRecv
-68262 ->  SockClose
-68286 ->  DlFile
-68310 ->  SaveJPEG
-68336 ->  QueryFuncAddr
-68360 ->  OpenWBSession
-68384 ->  SendWBCmd
-68408 ->  SendWBCmdEx
-68432 ->  ReleaseWBStrPool
-68456 ->  CloseWBSession
-68482 ->  CheckTssSDKSignature
-68506 ->  PopupDialog
-68530 ->  WaitDialog
-68554 ->  GetAPKCertMd5
-68578 ->  JNICmd
-68602 ->  chmod
-68626 ->  axml2xml
-68650 ->  GetSoExportSymbs
-68672 ->  FOpen
-68694 ->  FWriteHexAsBinary
-68718 ->  FClose
-68742 ->  SetLibcWord
-68766 ->  TssSdkIoctl
-68790 ->  symlink
-68814 ->  unlink
-68838 ->  errno
-68862 ->  strerror
-69008 ->  readlink
-69032 ->  open
-69056 ->  read
-69080 ->  write
-69102 ->  lseek
-69126 ->  close
-69150 ->  get_file_name
-69174 ->  XmlOpen
-69198 ->  XmlRoot
-69222 ->  XmlFirstChild
-69246 ->  XmlNextSiblingElem
-69270 ->  XmlAttribute
-69294 ->  XmlClose
-69318 ->  SysCall
-69342 ->  AnyCall
-69930 ->  handleNativeCallBack
-69946 ->  (Lcom/tencent/tp/MainThreadDispatcher$NativeRunnable;)V
-69964 ->  handleNativeFuncCallback
-69976 ->  (JJ)V
-75114 ->  gp4_crash
-75140 ->  ts2_crash
-75166 ->  vpp_crash
-75192 ->  cheat_openid_crash
-75218 ->  lua_crash
-75244 ->  box_crash
-75270 ->  str_crash
-75296 ->  shell_crash
-75382 ->  gp5_crash
-76936 ->  msg_box
-78434 ->  gp4
-78464 ->  gp4
-78734 ->  anti_debugger
-78804 ->  libtprt.so
-78926 ->  |
-78950 ->  id
-78986 ->  type
-79016 ->  type
-79096 ->  ;
-79152 ->  ;
-79382 ->  gp5_crash
-79626 ->  gp5_crash
-79798 ->  libtprt.so
-80124 ->  .so
-82910 ->  ts2_always_start
-82942 ->  ts2_always_start
-83358 ->  libc.so
-83374 ->  gettimeofday
-83400 ->  libc.so
-83412 ->  clock_gettime
-83492 ->  ts_confirmed_cnt
-83572 ->  ts_confirmed_%d
-83906 ->  ts_onlyacu
-84312 ->  ts2_crash_ignore_sig
-84442 ->  ts2_crash
-85552 ->  TianTian
-85664 ->  ts_start_cnt
-85742 ->  ts_start_%d
-86548 ->  core
-87568 ->  local_cache
-90778 ->  report_cache_3.dat
-90934 ->  report_cache_3.dat
-91118 ->  .tmp
-91138 ->  wb
-92848 ->  local_cache
-92882 ->  report_cache_3.dat
-93022 ->  report_cache_3.dat
-95664 ->  101.227.152.178
-95806 ->  cs.mbgame.gamesafe.qq.com
-96044 ->  r
-96134 ->  203.205.179.145
-96174 ->  203.205.128.159
-100906 ->  ipv6.mainconn.gamesafe.qq.com
-101818 ->  ipv6.mainconn.gamesafe.qq.com
-115324 ->  port_cnt=%d
-115350 ->  |port_%d=%d
-115470 ->  ip_cnt=%d
-115500 ->  |ip_%d=%s
-115976 ->  [tpchannel]:%s
-116078 ->  |
-117676 ->  |
-117698 ->  push_cnt
-117730 ->  remain_cnt
-117762 ->  sent_by_cs_cnt
-117794 ->  sent_by_game_cnt
-118014 ->  all
-118134 ->  all
-118766 ->  %s/GameProtector3
-119038 ->  gp3_enable_tracer_scanner
-119074 ->  gp3_enable_attach_check
-119594 ->  %d
-119622 ->  %d
-120030 ->  w
-120690 ->  %d%s%d
-121194 ->  ro.build.version.sdk
-121352 ->  /proc/self/status
-121392 ->  TracerPid
-121432 ->  %*s%d
-121616 ->  safe_ptrace
-121652 ->  safe_ptrace:%d:%d
-121838 ->  gp3_crash
-121874 ->  tracer_scanner
-121886 ->  tracer_scanner
-121940 ->  gp3_crash
-223480 ->  auto_defence
-223544 ->  anti_ts2
-223614 ->  gp3_no_root
-223680 ->  gp4_2
-223742 ->  gp4_opt
-223798 ->  gp3
-223822 ->  gp3_opt
-223850 ->  gp3
-224452 ->  TracerPid
-224498 ->  PPid
-224618 ->  TracerPid
-224802 ->  PPid
-224936 ->  /proc/%u/status
-225264 ->  State:
-225370 ->  T (stopped)
-225432 ->  State:
-225538 ->  t (tracing stop)
-225602 ->  TracerPid
-225886 ->  |
-225908 ->  name
-225952 ->  size
-225990 ->  keywords
-227080 ->  /proc/self/smaps
-227244 ->  Rss:
-228896 ->  /proc/%u/pagemap
-229624 ->  mem_trap
-229734 ->  gp3_err_crash
-229878 ->  gp4_no_root
-230464 ->  pagemap
-230560 ->  gp3_err_crash
-230638 ->  gp4_ignore
-230684 ->  kwrite
-231000 ->  /proc/%u
-231012 ->  /proc/%u/task/%u
-231416 ->  mem
-231430 ->  pagemap
-231470 ->  gp3_err_chk
-232372 ->  crash_mem_trap
-232398 ->  mem_trap
-232674 ->  gp4_cs_cnt
-232746 ->  gp4_cs_%d
-233106 ->  gp4_crash
-235524 ->  scan1
-235564 ->  antiemulator
-235674 ->  WS-
-235908 ->  tss_emu_c2.dat
-236128 ->  scan_x86
-236168 ->  .so
-236176 ->  /dev/
-236506 ->  |
-236526 ->  name
-236618 ->  type_%d
-236644 ->  data_%d
-237046 ->  wait_cpu_model
-237216 ->  Atom
-237254 ->  emu_white
-237384 ->  UnknownX86
-237806 ->  tss_emu_p.dat
-238120 ->  tss_emu_p.dat
-238322 ->  tss.rwc2.tmp
-238370 ->  %s/%s
-238612 ->  : 
-239324 ->  tss_emu_c2.dat
-239890 ->  |
-239910 ->  files_dir
-239946 ->  wait
-240028 ->  NULL
-240044 ->  NULL
-240076 ->  TssIoCtl.emm:%d,n:%s,p:%s,b:%u
-240322 ->  cs_%s
-240948 ->  core
-241680 ->  core
-241754 ->  schedule_reset
-242028 ->  core
-242090 ->  core
-242128 ->  scan_loop
-242152 ->  collect_loop
-242176 ->  update_loop
-242210 ->  force_heart_beat
-242244 ->  scan_bk
-242728 ->  comm.dat
-243370 ->  scan_loop
-243970 ->  state:%08x,r:%d/%d/%d/%d/%d/%d/%d,p:%d/%d,%d
-244492 ->  %s/%d/%s
-244500 ->  http://dlied1.qq.com/iedsafe/Client/android
-244510 ->  config2.xml
-246162 ->  %s/%d/%s
-246192 ->  config2.xml
-246378 ->  https://dlied1.qq.com/iedsafe/Client/android
-246574 ->  %s/%d/%s
-246592 ->  config2.xml
-246958 ->  GAME
-246970 ->  hash
-246984 ->  %08X
-247234 ->  mrpcsc
-247304 ->  comm.dat
-247388 ->  mrpcs
-248084 ->  DEFAULT
-248098 ->  ct
-248200 ->  DEFAULT
-248292 ->  file
-248306 ->  name
-248318 ->  type
-248328 ->  probability
-248340 ->  gray
-248352 ->  %s/%d/%08X/%s
-248364 ->  %08X
-248376 ->  hash
-248388 ->  A
-248400 ->  B
-248412 ->  a
-248424 ->  b
-248436 ->  %u
-248444 ->  mrpcs.data
-249002 ->  game
-249844 ->  mrpcs
-251200 ->  %s/%d/%s
-251222 ->  config3.xml
-251446 ->  ver
-251492 ->  crc
-251516 ->  so
-251928 ->  0x%08x
-264020 ->  %d
-264326 ->  %d
-274244 ->  /dev/virtpipe-sec
-277538 ->  /proc/self/maps
-277658 ->  delete
-277666 ->  %zx-%zx %c%c%c%c %x %x:%x %u %s
-278070 ->  system
-278460 ->  chk_elf_header2
-279104 ->  /proc
-279186 ->  /proc/%u/cmdline
-279198 ->  r
-279464 ->  /proc/%u
-279602 ->  /proc/%u
-279750 ->  /proc/%u/task
-280436 ->  rb
-283362 ->  tss_r_record.dat
-283520 ->  tss_r_record.dat
-283984 ->  info
-284918 ->  ImeiEx:%s
-284986 ->  SImei:%s
-285406 ->  false
-285458 ->  /proc/sys/fs/inotify/max_user_watches
-285692 ->  apk_cnt:%d
-285922 ->  %s:%x
-285930 ->  libc_word
-286040 ->  device_info
-286148 ->  inf_cl:1|%d|%d|%d
-286192 ->  com/tencent/tp/TssJavaMethod
-286204 ->  com/tencent/tp/TssJavaMethod
-286216 ->  ()V
-287044 ->  tss_main:%s
-287344 ->  %08X%08X%02X%02X%02X%02X%01X%01X%01X%01X%04X%04X%04X%04X%04X%04X%04X%08X
-287540 ->  %04X
-294820 ->  [mf]scan %s, path:%s, t:%d
-295118 ->  scan_by_detect
-295444 ->  META-INF/MANIFEST.MF
-296580 ->  /data/data/%s/files/tss.rwv.tmp
-297116 ->  zhushou.cc
-297682 ->  cheat_openid_crash
-297804 ->  cheat_openid_crash
-298006 ->  ano_box
-298080 ->  msg_box
-299078 ->  msg_box
-299884 ->  com.tencent.mobileqq
-299900 ->  com.tencent.mm
-299912 ->  com.eg.android.AlipayGphone
-299924 ->  de.robv.android.xposed.installer
-299936 ->  biz.bokhorst.xprivacy
-299948 ->  eu.faircode.xlua
-299960 ->  eu.chainfire.supersu
-299972 ->  com.topjohnwu.magisk
-299984 ->  com.facebook.katana
-299996 ->  com.twitter.android
-300008 ->  com.instagram.android
-300072 ->  com.tencent.tmgp.sgame
-300088 ->  com.tencent.tmgp.cf
-300100 ->  com.tencent.tmgp.pubgmhd
-300112 ->  com.tencent.tmgp.speedmobile
-303464 ->  getopenid
-303822 ->  ipv6.mainconn.gamesafe.qq.com
-303834 ->  dlied1.qq.com
-303988 ->  rwc.c.tmp
-304018 ->  w
-304044 ->  r
-304508 ->  %s/GameProtector3
-304886 ->  elf_timehook
-304920 ->  libc.so
-305074 ->  rb
-305260 ->  libunity.so
-305272 ->  libGameApp.so
-305280 ->  libc.so
-305294 ->  clock_gettime
-305306 ->  gettimeofday
-305714 ->  unknown lib
-306134 ->  false
-306320 ->  2.3
-306526 ->  tmp.mf
-306546 ->  META-INF/MANIFEST.MF
-306910 ->  r
-306958 ->  SHA1-Digest: 
-306970 ->  Name: 
-306980 ->  .so
-307364 ->  .tencent.
-309036 ->  scan1
-309186 ->  cs_%s
-309544 ->  anti_virapp
-309570 ->  anoscan
-309592 ->  lua
-309620 ->  gp5
-309644 ->  antiemulator
-309882 ->  gp3
-309964 ->  anti_virapp
-310046 ->  lua
-310120 ->  anoscan
-310194 ->  anti_virapp2
-310268 ->  cs_vm
-310354 ->  file
-310460 ->  process
-310536 ->  module
-310612 ->  cc2
-310686 ->  cert3
-310768 ->  gp5
-310842 ->  antiemulator
-310918 ->  user_tag
-311008 ->  elf_hook_scan
-311092 ->  anti_cheat_open_id
-311222 ->  opcode_scan
-311312 ->  scanmono
-311402 ->  wb_sync
-311478 ->  collect_apk
-311568 ->  ts
-311652 ->  env_chk
-311732 ->  unityopcode
-311810 ->  open_id2
-311872 ->  gp3
-312358 ->  tss_tmp
-312664 ->  scan2
-312844 ->  resscan
-312884 ->  resscan
-313312 ->  libmono.so
-313444 ->  mono_image_open_from_data_with_name
-313652 ->  comm.dat
-313688 ->  tss_cs2.dat
-320950 ->  lua_crash
-321732 ->  jar_ver
-321762 ->  emulator_name
-321788 ->  libdir
-321818 ->  sdcard_path
-321846 ->  sdcard_pkg_path
-321872 ->  app_path
-321898 ->  cache_dir
-321924 ->  imei_ex
-321950 ->  wifi_name
-321976 ->  machine_name
-322002 ->  sys_ver
-322028 ->  cert_md5
-322054 ->  app_name
-322080 ->  cert_author
-322106 ->  package_name
-322132 ->  cpu_model
-322568 ->  9015
-328412 ->  data
-328484 ->  tssmua.zip
-328500 ->  tssmua_mtcj.zip
-328512 ->  tssmua_cs.zip
-328532 ->  data
-329714 ->  TssSDK
-330142 ->  data
-330620 ->  tssmua_th.zip
-330646 ->  tssmua_tc.zip
-330728 ->  tssmua_th.zip
-330744 ->  tssmua_tc.zip
-330782 ->  data
-331376 ->  r
-331992 ->  scan1
-332026 ->  user_tag
-332246 ->  user_tag:%s%d
-332490 ->  |
-332512 ->  name
-332544 ->  score
-332578 ->  cs
-332818 ->  tss_uts_c2.dat
-333214 ->  tss_uts_c2.dat
-333256 ->  %s/%s
-333886 ->  |
-333904 ->  files_dir
-333940 ->  wait
-334026 ->  NULL
-334040 ->  NULL
-334074 ->  TssIoCtl.uts:%d,n:%s,p:%s,b:%u
-334772 ->  chk_elf_header2
-335392 ->  mn_cache.dat
-335528 ->  .so
-336004 ->  .so
-337716 ->  Assembly-CSharp.dll
-337926 ->  libmono.so
-337978 ->  /proc/self/maps
-337988 ->  r
-338024 ->  %lx-%lx %c%c%c%c %x %x:%x %u %s
-338484 ->  assets
-341024 ->  cache.res.crc.dat
-342650 ->  res_block_interval
-342710 ->  res_readdir_interval
-342772 ->  res_flush_tick
-342920 ->  tpresmap
-343000 ->  %s/%s
-343052 ->  %s/%s
-343124 ->  %s/files/tpresmap
-343172 ->  %s/files/tpresmap
-343982 ->  cache.res.dat
-344278 ->  cache.res.crc.dat
-345156 ->  %s/%s
-346054 ->  ios:
-346088 ->  android:
-346112 ->  android:
-346148 ->  %s/%s
-346220 ->  /sdcard/Android/data/%s/%s
-346440 ->  %s/%s
-346448 ->  tpresmap
-347576 ->  cache.res.dat
-347942 ->  cache.res.crc.dat
-352744 ->  res_block_interval
-352784 ->  res_readdir_interval
-352836 ->  res_flush_tick
-353354 ->  tpresmap
-353428 ->  %s/%s
-353442 ->  %s/%s
-354560 ->  %s/%s
-358444 ->  apk_time_diff
-358496 ->  apk_max_size
-358970 ->  AllApk
-359308 ->  /sdcard/Android/data
-359458 ->  %s/%s
-362002 ->  %s:%s
-362282 ->  %s:%s
-367640 ->  module
-367674 ->  function
-368128 ->  %s:%s
-378554 ->  ss_tmp
-378676 ->  ss_tmp
-378970 ->  ss_tmp
-380010 ->  screenshot
-380276 ->  ss_tmp
-380302 ->  tcj_sshot.bin
-380400 ->  .tmp
-380584 ->  abcd1234
-380970 ->  comm.dat
-381000 ->  tcj_screenshot_day_cnt_limit
-382780 ->  tcj_hash.dat
-383342 ->  tcj
-383408 ->  tss_tmp
-383648 ->  tcj
-383762 ->  tss_tcj.dat
-385956 ->  .xml
-385980 ->  .MF
-386026 ->  %s.zip
-386068 ->  AndroidManifest.xml
-386090 ->  MANIFEST.MF
-386122 ->  abcd1234
-399116 ->  tcj_wifi_limit
-399128 ->  tcj_cellular_limit
-399140 ->  tcj_today_wifi_limit
-399152 ->  tcj_today_cellular_limit
-403820 ->  tcjcfg.dat
-403900 ->  tcjcfg.dat
-407964 ->  abcd1234
-408400 ->  /proc/self/maps
-408490 ->  %zx-%zx %c%c%c%c %x %x:%x %u %s
-410052 ->  r
-412456 ->  cs_dl
-416910 ->  down_mrpcs
-417692 ->  comm.dat
-418328 ->  comm.dat
-418950 ->  %s/tersafeupdate2.jar
-419018 ->  %s/libtersafeupdate2.so
-419606 ->  %s/tpup.zip
-419688 ->  %s/tpup.so.tmp
-419718 ->  tpup.so
-419752 ->  %s/tpup.dex.tmp
-419780 ->  tpup.dex
-419946 ->  http://dlied1.qq.com/iedsafe/Client/android
-419958 ->  %s/%d/%08X/tpup.zip
-420018 ->  %s/tpup.zip
-420070 ->  %s/tpup.so.tmp
-420122 ->  %s/tpup.dex.tmp
-420316 ->  %s/tpup.dex.tmp
-420540 ->  %s/tpup.so.tmp
-420708 ->  %s/tpup.dex.tmp
-420774 ->  tpup.dex
-420800 ->  %s/tpup.so.tmp
-420850 ->  libtersafeupdate2.so
-420984 ->  %s/tpup.dex.tmp
-421018 ->  %s/tersafeupdate2.jar
-421076 ->  tpup.dex
-421108 ->  %s/tpup.so.tmp
-421144 ->  %s/libtersafeupdate2.so
-421194 ->  libtersafeupdate2.so
-421286 ->  http://dlied1.qq.com/iedsafe/Client/android
-421298 ->  %s/%d/%08X/tpup.dex
-421366 ->  http://dlied1.qq.com/iedsafe/Client/android
-421378 ->  %s/%d/%08X/tpup.so
-421438 ->  %s/tersafeupdate2.jar
-421490 ->  %s/libtersafeupdate2.so
-421904 ->  %s.dl
-422226 ->  %s.dl
-422374 ->  %s.dl
-422410 ->  .tmp
-422546 ->  w
-423118 ->  .tmp
-423422 ->  ab+
-423680 ->  %d-
-424034 ->  up_wifi
-424124 ->  %s.dl
-433168 ->  |
-433190 ->  name
-433224 ->  keywords
-434642 ->  comm.dat
-435588 ->  comm.dat
-436712 ->  tss_ano.dat
-436904 ->  mrpcs1
-436988 ->  tcjcfg.dat
-437746 ->  comm.dat
-438326 ->  comm.dat
-438434 ->  tlf
-439026 ->  comm.dat
-439514 ->  tss_tcj.dat
-439948 ->  comm.dat
-441330 ->  comm.dat
-441424 ->  cn.com.opda.gamemaster
-441478 ->  cn.mc1.sq
-441518 ->  com.muzhiwan.gamehelper
-441554 ->  pj.ishuaji.cheat
-441594 ->  com.www.gamespeeder
-441630 ->  armbin
-441674 ->  binarm
-441720 ->  com.cih.game_cih
-441760 ->  com.huang.hl
-441800 ->  com.paojiao.youxia
-441840 ->  com.saitesoft.gamecheater
-441880 ->  com.xiongmaoxia.gameassistant
-441920 ->  com.yx.youxia
-441960 ->  com.gmd.speedtime
-442006 ->  org.sbtools.gamespeed
-442054 ->  com.xiaojianjian.sw.app
-442100 ->  org.sbtools.master
-442142 ->  gamehacker
-442186 ->  com.cyjh.gundam
-442230 ->  com.cyjh.mobileanjian
-442276 ->  com.jbbl.handjingling
-442318 ->  com.scriptelf
-442360 ->  net.aisence.Touchelper
-442406 ->  com.cyjh.gundam.service.ScriptService.p
-442450 ->  com.diaobaosq
-442492 ->  com.kascend.chushou.lu
-442532 ->  com.leifeng.gametools
-442572 ->  com.dimonvideo.luckypatcher
-442614 ->  InAppBillingService.LUCK
-442654 ->  com.keramidas.TitaniumBackup
-442702 ->  com.flamingo.xxrgplugin
-442746 ->  com.dragon.android.pandaspace
-442788 ->  com.mf.guagua.ttfwks
-442828 ->  com.huluxia.gametools
-442876 ->  xxAssistant
-442916 ->  ui.robot.rotatedonate
-443390 ->  comm.dat
-443648 ->  /dev/
-443680 ->  /system/
-443714 ->  com.ijinshan.duba
-443750 ->  com.lbe.security
-443786 ->  com.qihoo
-443822 ->  dalvik
-443858 ->  hook
-443898 ->  libhelpertool
-443934 ->  libhhmspy
-443972 ->  libooenv
-444008 ->  libooSpeeder
-444046 ->  libsubstrate
-444082 ->  libxxAndroidLoader
-444118 ->  libxxdvm
-444154 ->  libxxghost
-444648 ->  .so
-444696 ->  comm.dat
-445142 ->  comm.dat
-445436 ->  comm.dat
-445990 ->  comm.dat
-446310 ->  comm.dat
-446630 ->  comm.dat
-446926 ->  tcjcfg.dat
-447338 ->  tcjcfg.dat
-447526 ->  comm.dat
-447818 ->  comm.dat
-448378 ->  comm.dat
-448876 ->  comm.dat
-449218 ->  comm.dat
-449648 ->  comm.dat
-449976 ->  tp2cfg.dat
-450496 ->  tp2cfg.dat
-451066 ->  comm.dat
-452308 ->  comm.dat
-452390 ->  |
-452412 ->  name
-452448 ->  type
-452488 ->  size
-452526 ->  keywords
-452812 ->  tss_ano.dat
-452968 ->  tss_ano.dat
-453270 ->  tss_ano.dat
-453540 ->  tss_ano.dat
-453766 ->  tss_ano.dat
-454078 ->  |
-454100 ->  name
-454140 ->  modules
-457672 ->  assets/__tpinfo.tsa
-457924 ->  lib/armeabi/libtprtMobSec.so
-457978 ->  lib/armeabi-v7a/libtprtMobSec.so
-458022 ->  lib/x86/libtprtMobSec.so
-458186 ->  classes.dex
-458252 ->  classes.dex
-466440 ->  DeveloperCertificates
-466470 ->  <data>
-466500 ->  </data>
-466584 ->  TeamName
-466618 ->  <string>
-466648 ->  </string>
-466904 ->  <plist
-466932 ->  </plist>
-473282 ->  %s/%s
-473292 ->  su
-473400 ->  /data/data/com.topjohnwu.magisk
-473498 ->  root_ext_cnt
-473550 ->  root_path_%d
-474318 ->  tersafe.update
-474348 ->  r
-474406 ->  w
-474548 ->  %s/%s
-475042 ->  ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
-475294 ->  tss_m_id_2.dat
-475572 ->  %s/tss_tmp/%s
-475666 ->  %s/%s
-476418 ->  r
-476624 ->  str_crash
-477002 ->  0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
-483204 ->  r
-483240 ->  w
-483592 ->  rb
-484382 ->  w
-484446 ->  r
-484660 ->  w
-488390 ->  /dev/random
-548236 ->  cache.crc.dat
-548608 ->  cache.md5.dat
-549630 ->  cache.crc.dat
-550084 ->  cache.md5.dat
-653858 ->  /data/data/log
-653874 ->  /sdcard/sdk
-653886 ->  /mnt/sdcard/sdk
-653898 ->  %s/%s
-653916 ->  enable.log
-653978 ->  enable.log
-654040 ->  %s/tmp.log
-654154 ->  %s/%s/%s
-654166 ->  /data/data
-654178 ->  files
-654208 ->  %s/enable.log
-654236 ->  %s/enable.log
-654358 ->  %s/%s
-654366 ->  enable.log
-654662 ->  %s/%s
-654674 ->  log.log
-654930 ->  %s/%s
-654940 ->  log.log
-654994 ->  %s/%s
-655004 ->  enable.log
-655130 ->  %s/%s
-655140 ->  anti_log.log
-657038 ->  %s/%s
-657048 ->  anti_log.log
-657460 ->  %s/%s
-657472 ->  log.log
-657570 ->  %s/%s
-657584 ->  anti_log.log
-661466 ->  /data/data/%s
-662128 ->  service.adb.tcp.port
-662176 ->  persist.adb.tcp.port
-662206 ->  update_adb_enabled_over_usb:
-662294 ->  gp4
-662352 ->  anti_ts
-662372 ->  broad_cast
-662670 ->  initialize
-662684 ->  com/tencent/tp/TssJavaMethod
-662698 ->  ()V
-662860 ->  /data/data/%s/files
-663106 ->  allow_sensitive
-665336 ->  jar_ver:
-665414 ->  jar_ver:update:
-665494 ->  ver:
-665574 ->  vercode:
-665654 ->  apk_name:
-665734 ->  app_name:
-665814 ->  apk_path:
-665894 ->  sdcard:
-665974 ->  certenv:
-666054 ->  net_type:
-666134 ->  net_provider:
-666214 ->  files_dir:
-666294 ->  cert:
-666374 ->  imei:
-666454 ->  model:
-666534 ->  api_level:
-666614 ->  sys_ver:
-666694 ->  wifi:
-666774 ->  cpu_model:
-666860 ->  simulator_name:
-666938 ->  REAL_DEVICE
-667018 ->  i_beg
-667090 ->  i_end
-667144 ->  lib_dir:
-667200 ->  sd_package:
-667250 ->  info:on initialize done
-667300 ->  info:main initialize done
-667354 ->  cert_author:
-667408 ->  update_adb_enabled_over_usb:
-667462 ->  dev_macaddress:
-667516 ->  dev_imsi:
-667570 ->  dev_resolution:
-667624 ->  dev_cpuname:
-667678 ->  dev_totalmem:
-667732 ->  dev_freemem:
-667786 ->  dev_romsize:
-667840 ->  dev_battery:
-667894 ->  open_id_msdk:
-667948 ->  app_key:
-672992 ->  allow_sensitive
-673086 ->  csoversea.mbgame.gamesafe.qq.com
-673122 ->  150.109.0.38
-673160 ->  150.109.29.150
-673194 ->  150.109.0.45
-673228 ->  119.28.121.174
-673314 ->  mtp_defence_level
-673382 ->  mtp_defence_level
-678698 ->  module_base
-678722 ->  add
-678748 ->  stricmp
-678778 ->  stristr
-678800 ->  game_id_eq
-678826 ->  open_id_eq
-678854 ->  imei_eq
-678876 ->  model
-678902 ->  model_eq
-678924 ->  model_not_eq
-678948 ->  file_crc_eq
-678974 ->  file_exists
-678996 ->  file_md5_eq
-679020 ->  file_sha1_eq
-679042 ->  file_size_eq
-679064 ->  file_size_lt
-679086 ->  file_size_bt
-679108 ->  gray
-679132 ->  app_ver_eq
-679156 ->  app_ver_bt
-679178 ->  app_ver_lt
-679200 ->  app_ver_not_bt
-679222 ->  app_name_b64_eq
-679244 ->  apk_name_eq
-679266 ->  sdk_ver_eq
-679288 ->  sdk_ver_bt
-679310 ->  sdk_ver_lt
-679332 ->  sys_ver_eq
-679354 ->  sys_ver_bt
-679376 ->  sys_ver_lt
-679398 ->  del_file_if
-679424 ->  report_qos_if
-679450 ->  report_str_qos_if
-679476 ->  caches_file_path
-679502 ->  dl_file_if
-679526 ->  process_exists
-679548 ->  root_process_exists
-679570 ->  module_exists
-679592 ->  module_size_eq
-679616 ->  module_crc_eq
-679640 ->  module_first_crc_eq
-679662 ->  module_size_in_range
-679884 ->  opcode_eq
-679906 ->  opcode_not_eq
-679928 ->  opcode_eq2
-679958 ->  opcode_not_eq2
-679980 ->  timehooked
-680024 ->  apk_9015_eq
-680046 ->  apk_9015_not_eq
-680068 ->  hooked3
-680094 ->  hooked4
-680118 ->  hooked5
-680144 ->  hookeds3
-680166 ->  hookeds4
-680188 ->  hookeds5
-680212 ->  hooked6
-680236 ->  ts_exists
-680260 ->  gc_exists
-680282 ->  file_contains
-680306 ->  file_crc_eq2
-680330 ->  file_crc_not_eq2
-680352 ->  folder_writable
-680376 ->  folder_not_writable
-680396 ->  is_adb_over_usb_enabled
-680416 ->  get_func_opcode
-680440 ->  property_get
-680464 ->  inner_apk_file_crc_eq2
-680488 ->  inner_apk_file_crc_not_eq2
-680510 ->  inner_apk_file_contains
-680534 ->  is_arm
-680556 ->  is_x86
-680578 ->  tmp_path
-680602 ->  so_path
-680630 ->  self_apk_path
-680654 ->  apk_installed
-680676 ->  apk_installed2
-680698 ->  apk_path
-680722 ->  apk_crc_eq
-680746 ->  apk_crc_not_eq
-680772 ->  apk_size_eq
-680794 ->  apk_size_lt
-680816 ->  apk_size_bt
-680838 ->  hooked
-680862 ->  hooked2
-681096 ->  so_not_credible
-681128 ->  inner_apk_crc_eq
-681160 ->  inner_apk_crc_not_eq
-681190 ->  csharp_opcode_eq
-681224 ->  csharp_opcode_not_eq
-681254 ->  csharp_opcode_eq2
-681288 ->  csharp_opcode_not_eq2
-681318 ->  csharp_hooked
-681354 ->  get_pid
-681386 ->  get_uid
-681422 ->  module_patch_if_eq
-681456 ->  module_patch_if_not_eq
-681490 ->  hidden_malware_exists
-681522 ->  is_hidden_malware_exists
-681556 ->  files_folder_not_writable
-681588 ->  files_folder_not_writable2
-681620 ->  java_inited
-681652 ->  files_parent_readable
-681688 ->  gp3_files_occupy
-681718 ->  max_user_watches_lt
-681752 ->  is_simulator_cpu
-681782 ->  cpu_model_contains
-681812 ->  is_x86_env
-681848 ->  is_wifi
-681880 ->  is_root
-681910 ->  wifi_name_contains
-681944 ->  datetime_lt
-681974 ->  datetime_bt
-682010 ->  datetime_range
-682300 ->  week_day
-682330 ->  sleep
-682366 ->  cert_author_contains
-682398 ->  cert_md5_eq
-682430 ->  cert_md5_not_eq
-682462 ->  is_update_cdn_ok
-682500 ->  is_cs_channel_ok
-682530 ->  is_get_installed_apk_forbidden
-682562 ->  malware_exists
-700272 ->  w
-701498 ->  /proc/%u
-702104 ->  rwc.cs.tmp
-702264 ->  rwc.cs.tmp
-702414 ->  /proc/sys/fs/inotify/max_user_watches
-866644 ->  /proc/%u/cmdline
-866888 ->  /proc/%u/cmdline
-866916 ->  r
-866980 ->  /proc/%u/maps
-867008 ->  r
-867036 ->  .apk
-867046 ->  @classes.dex
-868154 ->  TSS_SDK_SIGDATA
-872260 ->  g_AllTssExportFunc
-872384 ->  GetTssExportFunc2
-873326 ->  com/tencent/tp/TssSdkInitInfo
-873352 ->  game_id
-873366 ->  I
-873554 ->  I
-873564 ->  Ljava/lang/String;
-873576 ->  com/tencent/tp/TssSdkUserInfo
-873604 ->  entry_id
-873648 ->  uin_type
-873684 ->  uin_int
-873720 ->  uin_str
-873758 ->  app_id_type
-873796 ->  app_id_int
-873832 ->  app_id_str
-874270 ->  I
-874280 ->  Ljava/lang/String;
-874292 ->  com/tencent/tp/TssSdkUserInfoEx
-874320 ->  entry_id
-874364 ->  uin_type
-874408 ->  uin_int
-874450 ->  uin_str
-874490 ->  app_id_type
-874534 ->  app_id_int
-874570 ->  app_id_str
-874606 ->  world_id
-874644 ->  role_id
-876536 ->  com/tencent/tp/TssIOCtlResult
-876616 ->  Ljava/lang/String;
-879774 ->  /data/app/%s-%d.apk
-879786 ->  /data/app/%s-%d/base.apk
-880024 ->  rb
-880286 ->  rb
-881016 ->  sendDataToSvr
-881028 ->  ([BI)I
-882300 ->  com/tencent/tp/TssJavaMethod
-882736 ->  <init>
-882750 ->  ()V
-883858 ->  com/tencent/tp/MainThreadDispatcher
-883872 ->  postDelayed
-883886 ->  Ljava/lang/String;
-884046 ->  (Lcom/tencent/tp/MainThreadDispatcher$NativeRunnable;J)V
-884114 ->  com/tencent/tp/MainThreadDispatcher$NativeRunnable
-884192 ->  clazz_name
-884270 ->  method_name
-884346 ->  method_signature
-884424 ->  obj_receiver
-884438 ->  Ljava/lang/Object;
-884514 ->  callbackFuncPtr
-884590 ->  dataPtr
-885176 ->  TracerPid
-885188 ->  /proc/%u/status
-885220 ->  r
-2058024 ->  com.zhushou.cc
-2058538 ->  /proc/%u
-2058732 ->  com.tencent.mm
-2058850 ->  com.tencent.mobileqq
-2058956 ->  com.google
-2060820 ->  /proc
-2061172 ->  /data/app/
-2061184 ->  /data/data/
-2061196 ->  /data/user/0/
-2061210 ->  .apk
-2061216 ->  tencent
-2061412 ->  .so
-2063946 ->  /data/app/
-2063954 ->  .apk
-2066180 ->  com.tencent.gamestick
-2066218 ->  vap,gamestick
-2066376 ->  com.tencent.gamestick
-2066414 ->  vap,gamestick
-2067722 ->  vpp_crash
-2067910 ->  .
-2068682 ->  /
-2072222 ->  virapp_white_%d
-2074976 ->  anti-virapp-files
-2076394 ->  vpp_l2_crash
-2078406 ->  /data/data/%s/files/tss.rwv.tmp
-2078926 ->  %s/%s
-2079258 ->  r
-2079362 ->  tss.rwp.tmp
-2079424 ->  w
-2079942 ->  /data/data/%s/files
-2085908 ->  com.zhushou.cc
-2086320 ->  /proc/%u
-2086678 ->  /system/
-2086758 ->  /vendor/
-2086824 ->  /dev/
-2086888 ->  com.tencent.mm
-2087016 ->  com.google
-2089894 ->  /data/data/%s
-2090646 ->  vap,gamestick
-2091578 ->  vap,gamestick
-2092796 ->  virapp2_crash
-2092898 ->  vap_3
-2092906 ->  vpp_crash
-2094826 ->  /proc/self/fd
-2094848 ->  /proc/self/fd/%s
-2094856 ->  .apk
-2097086 ->  .apk
-2097094 ->  .apk@
-2097918 ->  virapp2_crash
-2097986 ->  vap_2
-2097998 ->  vpp_l2_crash
-2098286 ->  com.tencent.gamestick
-2099856 ->  libtersafe
-2101808 ->  virapp2_crash
-2102174 ->  /data/data/%s/files/virap2.tss.dat
-2106496 ->  syscall_imp
-2107072 ->  libtersafeupdate2.so
-2107198 ->  opcode_scan
-2108796 ->  open
-2110698 ->  /data/data/
-2111326 ->  ShellCode
-2159418 ->  shell_crash
-2171180 ->  |
-2173462 ->  /data/data/%s/files
-2174878 ->  regist_mtp_info_receiver:%p
-2177128 ->  dec_tss_info:%s
-2177968 ->  app_key:
+0 :r
+5 :rb
+11 :w
+16 :x
+21 :ab+
+28 :/
+33 :.tmp
+41 :sem_%d_%d
+54 :%.2f
+62 :%d-
+69 :%d
+75 :%s.dl
+84 :system
+94 :delete
+104 :info:on initialize done
+131 :info:main initialize done
+160 :inf_cl:1|%d|%d|%d
+181 :app_key:
+193 :.tencent.
+206 :|
+211 :cs_%s
+220 :down_mrpcs
+234 :up_wifi
+245 :gp4
+252 :gp3
+259 :gp3_opt
+270 :gp4_2
+279 :gp4_opt
+290 :root
+298 :tcj
+305 :info
+313 :device_info
+328 :chk_elf_header2
+347 :elf_timehook
+363 :jump_info
+376 :anti_ts
+387 :broad_cast
+401 :cs_dl
+410 :scan1
+419 :scan2
+428 :mrpcs
+437 :mrpcs1
+447 :anti_virapp
+462 :anti_virapp2
+478 :screenshot
+492 :anti-virapp-crash
+513 :core
+521 :anoscan
+532 :msgbox_sys
+546 :schedule_reset
+564 :dlg_update_err
+582 :tpchannel
+595 :101.227.152.178
+614 :ipv6.mainconn.gamesafe.qq.com
+647 :cs.mbgame.gamesafe.qq.com
+676 :csoversea.mbgame.gamesafe.qq.com
+712 :101.226.103.110
+731 :117.135.169.46
+749 :182.254.10.42
+766 :140.207.69.43
+783 :203.205.179.145
+802 :203.205.128.159
+821 :150.109.0.38
+837 :150.109.29.150
+855 :150.109.0.45
+871 :119.28.121.174
+889 :ALL
+896 :port_cnt=%d
+911 :|port_%d=%d
+926 :ip_cnt=%d
+939 :|ip_%d=%s
+952 :[tpchannel]:%s
+970 :|init cs.
+983 :anti_data
+996 :len
+1003 :rcv
+1010 :is_cs
+1019 :service_id
+1033 :client_ip
+1046 :svr_ip
+1056 :port
+1064 :suc
+1071 :time_cast
+1084 :time_diff
+1097 :cs_state
+1109 :cs_errno
+1121 :getaddrinfo_err
+1140 :all
+1147 :push_cnt
+1159 :remain_cnt
+1173 :sent_by_cs_cnt
+1191 :sent_by_game_cnt
+1211 :cnt
+1218 :send_%d,ret:%d,cnt:%d,len:%d,remain:%d,cs:%d
+1266 :rcv_%d,len:%d,cs:%d
+1289 :tss_m_id_2.dat
+1307 :bail_res.zip
+1323 :comm.dat
+1335 :tcjcfg.dat
+1349 :tss_cs2.dat
+1364 :tpup.so
+1375 :tpup.dex
+1387 :libtersafeupdate2.so
+1411 :mrpcs.data
+1425 :config2.xml
+1440 :config3.xml
+1455 :tssmua.zip
+1469 :tssmua2.zip
+1484 :tssmua_mtcj.zip
+1503 :tssmua_cs.zip
+1520 :tssmua_lt.zip
+1537 :tssmua_st.zip
+1554 :Assembly-CSharp.dll
+1577 :tss_tcj.dat
+1592 :mn_cache.dat
+1608 :crc.sha1.dat
+1624 :sha1.ca.dat
+1639 :tss_tmp
+1650 :tss_anti_ts.dat
+1669 :tss_anti_ts_ret.dat
+1692 :tp2cfg.dat
+1706 :tss_ano.dat
+1721 :/proc/sys/fs/inotify/max_user_watches
+1762 :unknown lib
+1777 :libunity.so
+1792 :libGameApp.so
+1809 :clock_gettime
+1826 :gettimeofday
+1842 :META-INF/MANIFEST.MF
+1866 :MANIFEST.MF
+1881 :AndroidManifest.xml
+1904 :com.tencent.tp
+1922 :tss_tmp
+1933 :ss_tmp
+1943 :.xml
+1951 :.MF
+1958 :%s.zip
+1968 :abcd1234
+1980 :tcj_local
+1993 :tcj_small_map
+2010 :tcj_rpcs_small_map
+2032 :tcj_small_map_limit
+2055 :tcj_screenshot_time_limit
+2084 :tcj_imp
+2095 :tcj_inner
+2108 :tcj_inner2
+2122 :tcj_sys
+2133 :tcj_apk_cs
+2147 :tcj_self
+2159 :tcj_apk
+2170 :/vendor/
+2182 :/bionic/
+2194 :/system/
+2206 :/apex/
+2216 :/dev/
+2225 :[
+2230 :.so
+2237 :dex
+2244 :/data/data/
+2259 :/Info.plist
+2274 :/system/lib/libc.so
+2297 :/system/bin/linker
+2319 :tcj_self_apk
+2335 :apk_size
+2347 :tcj_mani
+2359 :tcj_today_file_limit
+2383 :tcj_screenshot_day_cnt_limit
+2415 :tcj_hash.dat
+2431 :.apk
+2439 :.zip
+2447 :ai_cache.dat
+2463 :tcj_wifi_limit
+2481 :tcj_cellular_limit
+2503 :tcj_today_wifi_limit
+2527 :tcj_today_cellular_limit
+2555 :MobileSubstrate/DynamicLibraries/
+2592 :/_CodeSignature/CodeResources
+2625 :tcj_app
+2636 :tcj_app_ver
+2651 :tcj_app_ver.dat
+2670 :tcj_app_ver.tmp
+2689 :tcj_app_ver.zip
+2708 :tcj_sshot.bin
+2725 :Name: 
+2735 :SHA1-Digest: 
+2752 :.so
+2759 :libNativeRQD.so
+2778 :libtpnsSecurity.so
+2800 :libtpnsWatchdog.so
+2822 :libBugly.so
+2837 :/dev/random
+2852 :tersafe.update
+2870 :ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+2938 :lua
+2945 :%zx-%zx %c%c%c%c %x %x:%x %u %s
+2980 :/proc
+2989 :/proc/%u/cmdline
+3009 :/proc/%u/task
+3026 :/proc/%u/status
+3045 :TracerPid
+3058 :PPid
+3066 :/proc/%u/stat
+3083 :/data/app/%s-%d.apk
+3106 :/data/app/%s-%d/base.apk
+3134 :@classes.dex
+3150 :tss_main:%s
+3165 :com/tencent/tp/EasyJNI
+3191 :loadClass
+3204 :(Ljava/lang/String;)Ljava/lang/Class;
+3245 :(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/ClassLoader;
+3310 :newDexClassLoader
+3331 :sendDataToSvr
+3348 :([BI)I
+3358 :libandroid_runtime.so
+3383 :handleNativeCallBack
+3407 :(Lcom/tencent/tp/MainThreadDispatcher$NativeRunnable;)V
+3466 :handleNativeFuncCallback
+3494 :(JJ)V
+3503 :com/tencent/tp/TssJavaMethod
+3535 :com/tencent/tp/MainThreadDispatcher
+3574 :postDelayed
+3589 :(Lcom/tencent/tp/MainThreadDispatcher$NativeRunnable;J)V
+3649 :com/tencent/tp/MainThreadDispatcher$NativeRunnable
+3703 :clazz_name
+3717 :Ljava/lang/String;
+3739 :method_name
+3754 :method_signature
+3774 :obj_receiver
+3790 :callbackFuncPtr
+3809 :dataPtr
+3820 :Ljava/lang/Object;
+3842 :<init>
+3852 :()V
+3859 :scan
+3867 :com/tencent/tp/TssSdkInitInfo
+3900 :game_id
+3911 :I
+3916 :com/tencent/tp/TssSdkUserInfo
+3949 :com/tencent/tp/TssSdkUserInfoEx
+3984 :entry_id
+3996 :uin_type
+4008 :uin_int
+4019 :uin_str
+4030 :app_id_type
+4045 :app_id_int
+4059 :app_id_str
+4073 :world_id
+4085 :role_id
+4096 :data
+4104 :com/tencent/tp/TssIOCtlResult
+4137 :com/tencent/tp/TssSdkDownloader
+4172 :download
+4184 :(Ljava/lang/String;)[B
+4210 :g_AllTssExportFunc
+4232 :GetTssExportFunc2
+4253 :%s/%d/%08X/tpup.dex
+4276 :%s/%d/%08X/tpup.so
+4298 :%s/%d/%08X/tpup.zip
+4321 :%s/tpup.dex.tmp
+4340 :%s/tersafeupdate2.jar
+4365 :%s/tpup.so.tmp
+4383 :%s/libtersafeupdate2.so
+4410 :%s/tpup.zip
+4425 :http://dlied1.qq.com/iedsafe/Client/android
+4472 :http://download.mocmna.qq.com/dlied1.qq.com/iedsafe/Client/android
+4542 :http://%s/iedsafe/Client/android
+4578 :http://dlied1.qq.com/iedsafe/Client/ios
+4621 :https://dlied1.qq.com/iedsafe/Client/android
+4669 :https://dlied1.qq.com/iedsafe/Client/ios
+4713 :http://intldlgs.qq.com/iedsafe/Client/android
+4762 :http://intldlgs.qq.com/iedsafe/Client/ios
+4807 :https://intldlgs.qq.com/iedsafe/Client/android
+4857 :https://intldlgs.qq.com/iedsafe/Client/ios
+4903 :https:
+4913 :DEFAULT
+4924 :GAME
+4932 :game
+4940 :file
+4948 :name
+4956 :size
+4964 :keywords
+4976 :modules
+4987 :package
+4998 :cs
+5004 :score
+5013 :probability
+5028 :A
+5033 :B
+5038 :a
+5043 :b
+5048 :hash
+5056 :type
+5064 :ct
+5070 :%08X
+5078 :0x%08x
+5088 :%s/%d/%08X/%s
+5105 :%s/test/%d/%s
+5122 :%s/%d/%s
+5134 :%u
+5140 :mrpcsc
+5150 :ver
+5157 :code_size
+5170 :crc
+5177 :gray
+5185 :so
+5191 :jar_ver:
+5203 :jar_ver:update:
+5222 :ver:
+5230 :vercode:
+5242 :apk_name:
+5255 :app_name:
+5268 :apk_path:
+5281 :sdcard:
+5292 :certenv:
+5304 :net_type:
+5317 :net_provider:
+5334 :files_dir:
+5348 :cert:
+5357 :imei:
+5366 :ImeiEx:%s
+5379 :SImei:%s
+5391 :model:
+5401 :api_level:
+5415 :sys_ver:
+5427 :wifi:
+5436 :cpu_model:
+5450 :simulator_name:
+5469 :REAL_DEVICE
+5484 :i_beg
+5493 :i_end
+5502 :i_apk_name:
+5517 :i_apk_path:
+5532 :i_sys_apk_name:
+5551 :i_sys_apk_path:
+5570 :lib_dir:
+5582 :dev_macaddress:
+5601 :dev_imsi:
+5614 :dev_resolution:
+5633 :dev_cpuname:
+5649 :dev_totalmem:
+5666 :dev_freemem:
+5682 :dev_romsize:
+5698 :dev_battery:
+5714 :initialize
+5728 :com/tencent/tp/TssJavaMethod
+5760 :()V
+5767 :Wifi
+5775 :iHotSpotInfo:
+5792 :open_id_msdk:
+5809 :getopenid
+5822 :cert_author:
+5838 :sd_package:
+5853 :update_adb_enabled_over_usb:
+5885 :service.adb.tcp.port
+5909 :persist.adb.tcp.port
+5933 :mtptest.dat
+5948 :mtp.i.m.dat
+5963 :adb:
+5971 :debugger:
+5984 :true
+5992 :module_base
+6007 :add
+6014 :stricmp
+6025 :stristr
+6036 :game_id_eq
+6050 :open_id_eq
+6064 :imei_eq
+6075 :model
+6084 :model_eq
+6096 :model_not_eq
+6112 :file_crc_eq
+6127 :file_exists
+6142 :file_md5_eq
+6157 :file_sha1_eq
+6173 :file_size_eq
+6189 :file_size_lt
+6205 :file_size_bt
+6221 :gray
+6229 :app_ver_eq
+6243 :app_ver_bt
+6257 :app_ver_lt
+6271 :app_ver_not_bt
+6289 :app_name_b64_eq
+6308 :apk_name_eq
+6323 :sdk_ver_eq
+6337 :sdk_ver_bt
+6351 :sdk_ver_lt
+6365 :sys_ver_eq
+6379 :sys_ver_bt
+6393 :sys_ver_lt
+6407 :del_file_if
+6422 :get_func_opcode
+6441 :report_qos_if
+6458 :report_str_qos_if
+6479 :caches_file_path
+6499 :dl_file_if
+6513 :process_exists
+6531 :root_process_exists
+6554 :module_exists
+6571 :module_size_eq
+6589 :module_crc_eq
+6606 :module_first_crc_eq
+6629 :opcode_eq
+6642 :opcode_not_eq
+6659 :module_patch_if_eq
+6681 :module_patch_if_not_eq
+6707 :opcode_eq2
+6721 :opcode_not_eq2
+6739 :timehooked
+6753 :timescaled
+6767 :reset_ts
+6779 :apk_9015_eq
+6794 :apk_9015_not_eq
+6813 :hooked3
+6824 :hooked4
+6835 :hooked5
+6846 :hookeds3
+6858 :hookeds4
+6870 :hookeds5
+6882 :hooked6
+6893 :ts_exists
+6906 :gc_exists
+6919 :file_contains
+6936 :file_crc_eq2
+6952 :file_crc_not_eq2
+6972 :folder_writable
+6991 :property_get
+7007 :inner_apk_file_crc_eq2
+7033 :inner_apk_file_crc_not_eq2
+7063 :inner_apk_file_contains
+7090 :is_arm
+7100 :is_x86
+7110 :tmp_path
+7122 :so_path
+7133 :self_apk_path
+7150 :apk_installed
+7167 :apk_path
+7179 :apk_crc_eq
+7193 :apk_crc_not_eq
+7211 :apk_size_eq
+7226 :apk_size_lt
+7241 :apk_size_bt
+7256 :hooked
+7266 :hooked2
+7277 :so_not_credible
+7296 :inner_apk_crc_eq
+7316 :inner_apk_crc_not_eq
+7340 :csharp_opcode_eq
+7360 :csharp_opcode_not_eq
+7384 :csharp_opcode_eq2
+7405 :csharp_opcode_not_eq2
+7430 :csharp_hooked
+7447 :is_32_sys
+7460 :is_64_sys
+7473 :main_module
+7488 :main_module_path
+7508 :is_mem_readable
+7527 :is_wifi
+7538 :is_root
+7549 :wifi_name_contains
+7571 :datetime_lt
+7586 :datetime_bt
+7601 :datetime_range
+7619 :daytime_lt
+7633 :daytime_bt
+7647 :daytime_range
+7664 :week_day
+7676 :get_pid
+7687 :get_uid
+7698 :apk_installed2
+7716 :cert_author_contains
+7740 :cert_md5_eq
+7755 :cert_md5_not_eq
+7774 :folder_not_writable
+7797 :hidden_malware_exists
+7822 :is_hidden_malware_exists
+7850 :files_folder_not_writable
+7879 :files_folder_not_writable2
+7909 :java_inited
+7924 :files_parent_readable
+7949 :gp3_files_occupy
+7969 :sleep
+7978 :max_user_watches_lt
+8001 :is_adb_over_usb_enabled
+8028 :module_size_in_range
+8052 :is_update_cdn_ok
+8072 :is_cs_channel_ok
+8092 :is_get_installed_apk_forbidden
+8126 :malware_exists
+8144 :is_simulator_cpu
+8164 :cpu_model_contains
+8186 :set_libc_enabled_word
+8211 :is_x86_env
+8225 :log
+8232 :mtp_report
+8246 :report
+8256 :ReportQosByGame
+8275 :get_sdk_version
+8294 :sleep
+8303 :get_app_version
+8322 :get_app_short_ver
+8343 :open_tphm
+8356 :enum_tphm
+8369 :get_tphm_name
+8386 :get_tphm_start
+8404 :get_tphm_size
+8421 :close_tphm
+8435 :GetSoTxtSegInfo3
+8455 :OpenTPAH
+8467 :CloseTPAH
+8480 :EnumTPApk
+8493 :GetTPApkInfo
+8509 :getpid
+8519 :getuid2
+8530 :mprotect
+8542 :is_mem_readable
+8561 :cal_buf_crc
+8576 :get_file_sizes
+8594 :get_file_md5
+8610 :get_file_crc
+8626 :get_cpu_type
+8642 :is_wifi
+8653 :is_root
+8664 :gray
+8672 :get_cache_file_path
+8695 :get_cache_file_path2
+8719 :process_name
+8735 :get_openid
+8749 :get_gameid
+8763 :get_platform
+8779 :create_data_stream
+8801 :close_data_stream
+8822 :write_u8
+8834 :write_u16
+8847 :write_u32
+8860 :write_str
+8873 :write_enc_str
+8890 :dump_buf
+8902 :tcj_file
+8914 :mk_dir
+8924 :rm_dir
+8934 :open_dir
+8946 :close_dir
+8959 :enum_dir
+8971 :is_hooked_by_mrpcs
+8993 :get_file_time
+9010 :get_random
+9024 :set_key_and_value
+9045 :get_value_by_key
+9065 :folder_not_writable
+9088 :kill
+9096 :get_module_base
+9115 :open_tpmh
+9128 :close_tpmh
+9142 :enum_tpmh
+9155 :tpmh_get_apk_name
+9176 :tpmh_get_malware_name
+9201 :get_comm_value_by_key
+9226 :hex2i
+9235 :str_num
+9246 :cal_str_crc
+9261 :get_ds_buf
+9275 :get_ds_buf_len
+9293 :ds_read_file
+9309 :read_u8
+9320 :read_u16
+9332 :read_u32
+9344 :read_str_ex
+9359 :read_enc_str_ex
+9378 :read_mem
+9390 :memcmp
+9400 :memcpy
+9410 :dlsym
+9419 :DsAllocMem
+9433 :DsSetOff
+9445 :DsReadLine
+9459 :OpenTPHP
+9471 :CloseTPHP
+9484 :EnumTPProcess
+9501 :TPHPGetName
+9516 :TPHPGetPid
+9530 :OpenTPZip
+9543 :CloseTPZip
+9557 :TPEnumZipInfo
+9574 :GetTPZipItemInfo
+9594 :TPUnzip
+9605 :TPUnzip2File
+9621 :IsStrExists
+9636 :UpdateTersafe
+9653 :MonoOpen
+9665 :MonoClose
+9678 :MonoEnum
+9690 :GetMonoImageInfo
+9710 :QueryStr
+9722 :access
+9732 :CharAt
+9742 :GetUnzipInfo
+9758 :QueryInteger
+9774 :jar_ver
+9785 :emulator_name
+9802 :NotEmulator
+9817 :libdir
+9827 :sdcard_path
+9842 :sdcard_pkg_path
+9861 :app_path
+9873 :cache_dir
+9886 :imei_ex
+9897 :wifi_name
+9910 :machine_name
+9926 :sys_ver
+9937 :cert_md5
+9949 :app_name
+9961 :9015
+9969 :data
+9977 :TssSDK
+9987 :cert_author
+10002 :package_name
+10018 :cpu_model
+10031 :PointerAdd
+10045 :PointerSub
+10059 :Hex2Pointer
+10074 :StrPointer
+10088 :GetTimeOfDay
+10104 :ClockGetTime
+10120 :CacheFlush
+10134 :IsEnabled
+10147 :SetEnabled
+10161 :SendCmd
+10172 :MemValue
+10184 :SetMemValue
+10199 :OpenWBSession
+10216 :SendWBCmd
+10229 :SendWBCmdEx
+10244 :ReleaseWBStrPool
+10264 :CloseWBSession
+10282 :FOpen
+10291 :FWriteHexAsBinary
+10312 :FClose
+10322 :ds_get_buf_cap
+10340 :CreateTPZip
+10355 :TPZipAdd
+10367 :SockConnect
+10382 :UnixSockConnect
+10401 :SockSend
+10413 :SockRecv
+10425 :SockClose
+10438 :DlFile
+10448 :SaveJPEG
+10460 :CheckTssSDKSignature
+10484 :PopupDialog
+10499 :SetLibcWord
+10514 :TssSdkIoctl
+10529 :open
+10537 :read
+10545 :write
+10554 :lseek
+10563 :readlink
+10575 :QueryFuncAddr
+10592 :WaitDialog
+10606 :GetAPKCertMd5
+10623 :JNICmd
+10633 :chmod
+10642 :axml2xml
+10654 :cert_parser
+10669 :GetSoExportSymbs
+10689 :symlink
+10700 :unlink
+10710 :errno
+10719 :strerror
+10731 :close
+10740 :get_file_name
+10757 :XmlOpen
+10768 :XmlRoot
+10779 :XmlFirstChild
+10796 :XmlNextSiblingElem
+10818 :XmlAttribute
+10834 :XmlClose
+10846 :ToString
+10858 :dlopen
+10868 :dlsym2
+10878 :dlclose
+10889 :get_tphm_exec
+10906 :get_tphm_read
+10923 :ReportData3
+10938 :DsGetOff
+10950 :DsMmapFile
+10964 :ReadNStr
+10976 :GetDexUserClsNames
+10998 :SysCall
+11009 :AnyCall
+11020 :su
+11026 :PATH
+11034 :/data/data
+11048 :files
+11057 :/data/data/log
+11075 :/sdcard/sdk
+11090 :/mnt/sdcard/sdk
+11109 :/data/data/
+11124 :/sdcard/Android/data
+11148 :enable.log
+11162 :log.log
+11173 :logXAYY.log
+11188 :anti_log.log
+11204 :anti_logXAYY.log
+11224 :.apk
+11232 :libtersafe.so
+11249 :libtersafe2.so
+11267 :libtprt.so
+11281 :libapollo.so
+11297 :libBugly.so
+11312 :libNativeRQD.so
+11331 :libtpnsSecurity.so
+11353 :libWTLoginAdapter.so
+11377 :libMsdkAdapter.so
+11398 :libTRAE_QT.so
+11415 :libfmodevent.so
+11434 :libfmodex.so
+11450 :libunity.so
+11465 :libmono.so
+11479 :jailbroken_detector2
+11503 :jailbroken_detector2_ext
+11531 :/Applications/Cydia.app
+11558 :/Library/MobileSubstrate/MobileSubstrate.dylib
+11608 :/usr/sbin/sshd
+11626 :/etc/fstab
+11640 :/private/etc/fstab
+11662 :/Applications
+11679 :/usr/include
+11695 :/Applications/iGameGuardian.app
+11730 :/Applications/GamePlayer.app
+11762 :/Applications/GameMaster.app
+11794 :/Applications/GameMasterPlus.app
+11830 :/Applications/Blackra1n.app
+11861 :/Applications/FakeCarrier.app
+11894 :/Applications/Icy.app
+11919 :/Applications/IntelliScreen.app
+11954 :/Applications/MxTube.app
+11982 :/Applications/RockApp.app
+12011 :/Applications/SBSetttings.app
+12044 :/Applications/WinterBoard.app
+12077 :/Applications
+12094 :/var/stash/Library/Ringtones
+12126 :/var/stash/Library/Wallpaper
+12158 :/var/stash/usr/include
+12184 :/var/stash/usr/libexec
+12210 :/var/stash/usr/share
+12234 :abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+12300 :sandbox
+12311 :openssh
+12322 :NotImp
+12332 :iDevName:%s
+12347 :iDevLocalModel:%s
+12368 :iHotSpotInfo:%s
+12387 :iHotSpotInfo:%s(%s)
+12410 :iDevMacAddr:%s
+12428 :iDevMacAddr:%02X:%02X:%02X:%02X:%02X:%02X
+12473 :iAppMachOUUID:%s
+12493 :iAppMachOUUID:%.2X%.2X%.2X%.2X%.2X-%.2X%.2X-%.2X%.2X-%.2X%.2X-%.2X%.2X%.2X%.2X%.2X
+12579 :iAppMachUUID:%s
+12598 :iAppMachUUID:%.2X%.2X%.2X%.2X%.2X-%.2X%.2X-%.2X%.2X-%.2X%.2X-%.2X%.2X%.2X%.2X%.2X
+12683 :iTssSDKUUID:%s
+12701 :iAppCryptInfo:%d(0x%X,0x%X)
+12732 :%s/%s
+12741 :%s/tss_tmp/%s
+12758 :%s/%s/%s
+12770 :/data/data/%s
+12787 :/data/data/%s/files
+12810 :%s/tmp.log
+12824 :%s/enable.log
+12841 :scan_loop
+12854 :collect_loop
+12870 :update_loop
+12885 :/proc/%u
+12897 :/proc/%u/task/%u
+12917 :mem
+12924 :gamehack
+12936 :armbin
+12946 :/proc/%u/maps
+12963 :%lx-%lx %c%c%c%c %x %x:%x %u %s
+12998 :rwc.c.tmp
+13011 :%02X
+13019 :%s:%s
+13028 :%s:%x
+13037 :report_cache_3.dat
+13059 :%d|%d|%d|%d|%d
+13077 :%d|%s|%d|%d|%d|%d
+13098 :%08X%08X%02X%02X%02X%02X%01X%01X%01X%01X%04X%04X%04X%04X%04X%04X%04X%08X
+13174 :%04X
+13182 :down.qq.com
+13197 :dlied1.qq.com
+13214 :TianTian
+13226 :: 
+13232 :libc.so
+13243 :/proc/self/maps
+13262 :TssIoCtl.emm:%d,n:%s,p:%s,b:%u
+13296 :files_dir
+13309 :wait
+13317 :tss.rwc2.tmp
+13333 :tss_emu_c2.dat
+13351 :tss_emu_p.dat
+13368 :type_%d
+13379 :data_%d
+13390 :UnknownX86
+13404 :WS-
+13411 :Atom
+13419 :emu_white
+13432 :wait_cpu_model
+13450 :scan_x86
+13462 :tss_uts_c2.dat
+13480 :TssIoCtl.uts:%d,n:%s,p:%s,b:%u
+13514 :user_tag:%s%d
+13531 :r
+13536 :rb
+13542 :w
+13547 :wb
+13553 :hi_gp4
+13563 :gp4_sub_thread
+13581 :gp4_ignore
+13595 :anti_rec
+13607 :ts
+13613 :env_chk
+13624 :process
+13635 :module
+13645 :cs_vm
+13654 :suspicious
+13668 :scanmono
+13680 :cert_content_chk
+13700 :antiemulator
+13716 :unityopcode
+13731 :local_cache
+13746 :appdata
+13757 :resscan
+13768 :gp3_no_root
+13783 :gp4_no_root
+13798 :gp4_no_root2
+13814 :tss_r_record.dat
+13834 :gp3_err_chk
+13849 :gp3_err_crash
+13866 :gp3_err_crash
+13883 :T (stopped)
+13898 :t (tracing stop)
+13918 :State:
+13928 :gp5
+13935 :user_tag
+13947 :allow_sensitive
+13966 :pagemap
+13977 :panda
+13986 :speed
+13995 :binarm
+14005 :com.huang.hl/hl
+14024 :sh
+14030 :/system/
+14042 :init
+14050 :kwrite
+14060 :kwf
+14067 :mtp_defence_level
+14088 :META-INF/MANIFEST.MF
+14112 :tss_base.dat
+14128 :hi.gp4.dat
+14142 :hi.gp4.2.dat
+14158 :search
+14168 :fuzzy
+14177 :edit
+14185 :memory
+14195 :ts_start_cnt
+14211 :ts_start_%d
+14226 :mono_image_open_from_data_with_name
+14265 :.so
+14272 :false
+14281 :2.3
+14288 :tmp.mf
+14298 :SHA1-Digest: 
+14315 :Name: 
+14325 :rwc.cs.tmp
+14339 :.
+14344 :assets
+14354 :/private/var/lib/apt
+14378 :/Applications/Cydia.app
+14405 :/Applications/limera1n.app
+14435 :/Applications/greenpois0n.app
+14468 :/Applications/blacksn0w.app
+14499 :/Applications/redsn0w.app
+14528 :/Applications/Absinthe.app
+14558 :function
+14570 :tlf
+14577 :report_qos_if(sdk_ver_bt(\"2.0.0\"),10010)
+14623 :cn.com.opda.gamemaster
+14649 :cn.mc1.sq
+14662 :com.muzhiwan.gamehelper
+14689 :pj.ishuaji.cheat
+14709 :com.www.gamespeeder
+14732 :com.cih.game_cih
+14752 :com.huang.hl
+14768 :com.paojiao.youxia
+14790 :com.saitesoft.gamecheater
+14819 :com.xiongmaoxia.gameassistant
+14852 :com.yx.youxia
+14869 :com.gmd.speedtime
+14890 :org.sbtools.gamespeed
+14915 :com.xiaojianjian.sw.app
+14942 :org.sbtools.master
+14964 :gamehacker
+14978 :com.cyjh.gundam
+14997 :com.cyjh.mobileanjian
+15022 :com.jbbl.handjingling
+15047 :com.scriptelf
+15064 :net.aisence.Touchelper
+15090 :com.cyjh.gundam.service.ScriptService.p
+15133 :com.diaobaosq
+15150 :com.kascend.chushou.lu
+15176 :com.leifeng.gametools
+15201 :com.dimonvideo.luckypatcher
+15232 :InAppBillingService.LUCK
+15260 :com.keramidas.TitaniumBackup
+15292 :com.flamingo.xxrgplugin
+15319 :com.dragon.android.pandaspace
+15352 :com.mf.guagua.ttfwks
+15376 :com.huluxia.gametools
+15401 :xxAssistant
+15416 :ui.robot.rotatedonate
+15441 :Activator
+15454 :PandaSpaceStore
+15473 :GameMaster
+15487 :GamePlayer
+15501 :iGameGuardian
+15518 :AutoTouch
+15531 :handjingling
+15547 :TouchElf
+15559 :TouchSprite
+15574 :ChushouRec
+15588 :oohelpercenter
+15606 :TweakCenter
+15621 :XXAssistCenter
+15639 :NULL
+15647 :/dev/
+15656 :com.ijinshan.duba
+15677 :com.lbe.security
+15697 :com.qihoo
+15710 :dalvik
+15720 :hook
+15728 :libhelpertool
+15745 :libhhmspy
+15758 :libooenv
+15770 :libooSpeeder
+15786 :libsubstrate
+15802 :libxxAndroidLoader
+15824 :libxxdvm
+15836 :libxxghost
+15850 :/MobileSubstrate/
+15871 :Activator.dylib
+15890 :gamecheater.dylib
+15911 :Input
+15920 :libstatusbar.dylib
+15942 :Mobilesubstrate.dylib
+15967 :qihoo.360
+15980 :SBPandaHome.dylib
+16001 :TweakLoader.dylib
+16022 :WeeLoader.dylib
+16041 :.dex
+16049 :.dll
+16057 :_CodeSignature/CodeResources
+16089 :all_cert_files
+16107 :cc2.cache.dat
+16124 :files
+16133 :MSDK
+16141 :Msdk
+16149 :Pandora
+16160 :apollo
+16170 :main_so
+16181 :tersafe
+16192 :classes.dex
+16207 :%s/files/tpresmap
+16228 :%s/tpresmap
+16243 :android:
+16255 :ios:
+16263 :/sdcard/Android/data/%s/%s
+16293 :tpresmap
+16305 :cache.res.crc.dat
+16326 :cache.crc.dat
+16343 :cache.md5.dat
+16360 :cache.res.dat
+16377 :/sdcard/Android/data/%s
+16404 :res_block_interval
+16426 :res_readdir_interval
+16450 :res_flush_tick
+16468 :libspeedman.so
+16486 :accele
+16496 :pophidden
+16509 :flowicon
+16521 :libtestlog.dat
+16539 :libxxspeedmanager.so
+16563 :scan
+16571 :lib9.so
+16582 :com.uxztamqnpmcdfmzddoii
+16610 :libhl_main.so
+16627 :suspend
+16638 :libConnBaseMod.so
+16659 :libtestlog.dat,libConnBaseMod.so
+16695 :com.tencent.qqgame
+16717 :com.tencent.tpgbox
+16739 :/data/data/%s/files/tpgboxver.dat
+16776 :/data/data/%s/files/libpluginloader.so
+16818 :com.tencent.mm
+16836 :com.tencent.mobileqq
+16860 :com.google
+16874 :com.tencent.gamestick
+16899 :/data/app/
+16913 :/data/user/0/
+16930 :/data/data/%s/files/tss.rwv.tmp
+16965 :tss.rwp.tmp
+16980 :assets/__tpinfo.tsa
+17003 :anti-virapp-files
+17024 :anti-virapp-lv2
+17043 :lib/armeabi/libtprtMobSec.so
+17075 :lib/armeabi-v7a/libtprtMobSec.so
+17111 :lib/x86/libtprtMobSec.so
+17139 :virapp_white_%d
+17158 :vap,gamestick
+17175 :tencent
+17186 :com.android
+17201 :facebook
+17213 :twitter
+17224 :input
+17233 :/proc/self/status
+17254 :ro.build.version.sdk
+17278 :%s/GameProtector3
+17299 :%d
+17305 :%d%d
+17313 :%d%s%d
+17323 :%*s%d
+17332 :gp3_enable_tracer_scanner
+17361 :gp3_enable_attach_check
+17388 :gp3
+17395 :gp3_exit
+17407 :gp3_traced
+17421 :GameProtector3
+17439 :gp5_%u
+17449 :id
+17455 :scancode
+17467 :;
+17472 :gp5_crash
+17485 :/proc/net/tcp
+17502 :/proc/net/tcp6
+17520 :%4d: %08X:%04X %08X:%04X %02X %08X:%08X %02X:%08lX %08X %5u %8d %lu %d %p %lu %lu %u %u %d
+17614 :%4d: %08X%08X%08X%08X:%04X %08X%08X%08X%08X:%04X %02X %08X:%08X %02X:%08lX %08X %5u %8d %lu %d %p %lu %lu %u %u %d
+17732 :GameProtector3
+17750 :debuggerd
+17763 :127.0.0.1
+17776 :ida:%d
+17786 :/proc/%d/task/%d/status
+17813 :/proc/%d/stat
+17830 :/proc/%d/task/%d/stat
+17855 :/proc/%d/wchan
+17873 :/proc/%d/task/%d/wchan
+17899 :ptrace_stop
+17914 :23946
+17923 :/proc/%d/comm
+17940 :/proc/%d/task/%d/comm
+17965 :JDWP Transport
+17983 :JDWP Event Help
+18002 :JDWP Command Re
+18021 :libjdwp.so
+18035 :frida:%d
+18047 :REJECTED
+18059 :frida_agent_main
+18079 :/apex/
+18089 :frida
+18098 :27042
+18107 :27043
+18116 :AUTH
+18124 :libfrida-gadget.so
+18146 :frida-agent-32.so
+18167 :frida-agent-64.so
+18188 :/data/local/tmp/12re.34frida.56server78
+18231 :/data/local/tmp/re.frida.server
+18266 :MSLoadExtensions
+18286 :MSFindSymbol
+18302 :MSGetImageByName
+18322 :MSCloseFunction
+18341 :MSHookFunction
+18359 :MSDecodeIndirectReference
+18388 :MSJavaHookClassLoad
+18411 :MSJavaHookBridge
+18431 :MSJavaHookMethod
+18451 :MSJavaCreateObjectKey
+18476 :MSJavaReleaseObjectKey
+18502 :MSJavaGetObjectKey
+18524 :MSJavaSetObjectKey
+18546 :MSJavaBlessClassLoader
+18572 :libsubstrate.so
+18591 :libsubstrate-dvm.so
+18614 :libAndroidCydia.cy.so
+18639 :substrate
+18652 :app_process32_xposed
+18676 :app_process64_xposed
+18700 :libxposed_art.so
+18720 :XposedBridge.jar
+18740 :posed
+18749 :/data/dalvik-cache/
+18772 :/data@app@
+18786 :de.robv.android.xposed.installer
+18822 :root_ext_cnt
+18838 :root_path_%d
+18854 :/data/data/com.topjohnwu.magisk
+18889 :com.tencent.mobileqq
+18913 :com.tencent.mm
+18931 :com.eg.android.AlipayGphone
+18962 :com.tencent.tmgp.sgame
+18988 :com.tencent.tmgp.cf
+19011 :com.tencent.tmgp.pubgmhd
+19039 :com.tencent.tmgp.speedmobile
+19071 :de.robv.android.xposed.installer
+19107 :biz.bokhorst.xprivacy
+19132 :eu.faircode.xlua
+19152 :eu.chainfire.supersu
+19176 :com.topjohnwu.magisk
+19200 :com.facebook.katana
+19223 :com.twitter.android
+19246 :com.whatsapp
+19262 :com.instagram.android
+19287 :/dev/virtpipe-sec
+19308 :/sdcard/sdk/tssmua.zip
+19334 :tssmua_th.zip
+19351 :tssmua_tc.zip
+19368 :d_anoscan
+19381 :d_rtonly
+19393 :ts2_ios_dylibs
+19411 :ts2_malware
+19426 :ts2_cs
+19436 :ts2_modules
+19451 :ts_confirmed_cnt
+19471 :ts_confirmed_%d
+19490 :ts_onlyacu
+19504 :anti_ts2
+19516 :apk_cnt:%d
+19530 :crash_protect_force_kill_%s
+19561 :crash_protect_force_kill_all
+19593 :tracer_scanner
+19611 :safe_ptrace:%d:%d
+19632 :safe_ptrace
+19647 :collect_apk
+19662 :anti_ida
+19674 :anti_frida
+19688 :anti_substrate
+19706 :anti_xposed
+19721 :gp3_crash
+19734 :gp4_crash
+19747 :ts2_crash
+19760 :vpp_crash
+19773 :ano_box
+19784 :apppermission_box
+19805 :vpp_l2_crash
+19821 :box_crash
+19834 :cheat_openid_crash
+19856 :lua_crash
+19869 :str_crash
+19882 :shell_crash
+19897 :ts2_crash_ignore_sig
+19921 :gp4_crash_ignore_sig
+19945 :ts2_always_start
+19965 :ano_always_start
+19985 :apk_time_diff
+20002 :apk_max_size
+20018 :gp4_cs_cnt
+20032 :gp4_cs_%d
+20045 :auto_defence
+20061 :DeveloperCertificates
+20086 :<data>
+20096 :</data>
+20107 :TeamName
+20119 :<string>
+20131 :</string>
+20144 :<plist
+20154 :</plist>
+20166 :libc_word
+20179 :code
+20187 :state:%08x,r:%d/%d/%d/%d/%d/%d/%d,p:%d/%d,%d
+20235 :/Developer/
+20250 :/System/
+20262 :/usr/
+20271 :regist_mtp_info_receiver
+20299 :regist_mtp_info_receiver:%p
+20330 :0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
+20370 :dec_tss_info:
+20387 :dec_tss_info:%s
+20406 :/proc/self/fd
+20423 :/proc/self/fd/%s
+20443 :libtersafe
+20457 :/data/data/%s/files/virap2.tss.dat
+20495 :.apk@
+20504 :AllApk
+20514 :anti_debugger
+20531 :mem_trap
+20543 :mem_trap2
+20556 :/proc/%u/pagemap
+20576 :crash_mem_trap
+20594 :SetChannelHost:
+20613 :SetChannelBuiltinIp:
+20637 :/proc/self/smaps
+20657 :Rss:
+20665 :/usr/lib/libSystem.B.dylib
+20695 :mach_vm_page_info
+20716 :TSS_SDK_SIGDATA
+20735 :syscall_imp
+20750 :opcode_scan
+20765 :opcode_scan2
+20781 :fopen
+20790 :fread
+20799 :fgets
+20808 :fseek
+20817 :readdir
+20828 :syscall
+20839 :access
+20849 :stat
+20857 :fstat
+20866 :getenv
+20876 :kill
+20884 :gettimeofday
+20900 :sleep
+20909 :select
+20919 :connect
+20930 :send
+20938 :recv
+20946 :clock_gettime
+20963 :ptrace
+20973 :execl
+20982 :fdopen
+20992 :getpid
+21002 :mach_absolute_time
+21024 :opendir
+21035 :tss_sdk_init
+21051 :ShellCode
+21064 :vap_2
+21073 :vap_3
+21082 :gp4_ano
+21093 :cc2
+21100 :cert3
+21109 :elf_hook_scan
+21126 :anti_cheat_open_id
+21148 :virapp2_crash
+21165 :wb_sync
+21176 :open_id2
+21188 :/embedded.mobileprovision
+21217 :msg_box
+21228 :zhushou.cc
+21242 :com.zhushou.cc
+21260 :scan_by_detect
+21278 :force_heart_beat
+21298 :scan_bk
+21309 :[mf]scan %s, path:%s, t:%d
